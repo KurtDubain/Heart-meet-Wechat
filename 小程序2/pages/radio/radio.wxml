@@ -1,0 +1,45 @@
+<!--pages/radio/radio.wxml-->
+<view class="header">
+  心逢电台
+</view>
+<view class="container">
+  <view class="data">
+    <image class="photo" src="../../images/音乐大封面.jpg"></image>
+    <view class="name">《为你写诗》</view>
+    <view class="like">
+      点赞  
+    </view> 
+    <view class="share">分享</view>
+  </view>
+  <view class="names">
+    <block wx:for="{{datalist}}" wx:key="index">
+      <view class="t_data" bindtap="bofang" data-item="{{item}}">
+         <image class="t_photo"  src="{{item.fengmian}}"></image>
+         <view class="t_text">
+           <view>
+            {{item.name}}
+           </view>
+           <view class="t_people">
+            {{item.people}}
+           </view>
+           <image class="book1"  src="../../images/播放1.png"></image>
+        </view>
+      </view>
+  </block>
+  </view>
+</view>
+<view class="tail">
+  <image class="png" src="{{fengmian}}"></image>
+  <view class="music">{{name}}</view>
+  <view class="pause" wx:if="{{isRunning}}" bindtap="pause">
+    <view class="rectangle1">
+    </view>
+    <view class="rectangle2">
+    </view>
+  </view>
+  <view class="play" wx:else bindtap="start">
+    <view class="trangle">
+      <view></view>
+    </view>
+  </view>
+</view>

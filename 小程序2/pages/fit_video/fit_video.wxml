@@ -1,0 +1,4 @@
+<!--pages/fit_video/fit_video.wxml-->
+<view class="shi">
+  <video src="{{video}}"></video>
+</view>

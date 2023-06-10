@@ -1,0 +1,54 @@
+<!--pages/gym/gym.wxml-->
+<view class="container">
+  <view class="header">
+    <image class="photo" src="{{detail.picture}}">
+    </image>
+    <view class="info">
+      <view class="name">
+       {{detail.name}}
+      </view>
+      <view class="position">
+        {{detail.address}}
+      </view>
+    </view>
+  </view>
+  <view class="state">
+ <text> 营业中: {{detail.time}}</text> 
+  </view>
+  <view class="tele">
+    <image src="../../images/电话.png">
+    </image>
+    <view>
+    电话：{{detail.phone}}
+    </view>
+  </view>
+  <view class="comment"> 
+    评论区
+  </view>
+  <block wx:for="{{pinglun}}" wx:key="wuwuuwu">
+   <view class="pinglunitem">
+     <text class="user">{{item.name}}发表评论：</text>
+     <text class="pl">{{item.content}}</text>
+    </view>
+    
+   </block>
+   <input placeholder="请输入内容" class="input" bindinput="getcontent" value="{{content}}"> </input>
+   <button type = "primary" bindtap = "fabiao1">发表评论</button>
+</view>
+
+
+<view class="tail">
+  <view>
+    <image src="../../images/收藏.png"></image>
+    <View>收藏</View>
+  </view>
+  <view>
+    <image src="../../images/分享.png"></image>
+    <View>分享</View>
+  </view>
+  <view>
+    <image src="../../images/预约.png" bindtap = "go1" data-item="{{detail}}"></image>
+    <View>预约</View>
+  </view>
+</view>
+

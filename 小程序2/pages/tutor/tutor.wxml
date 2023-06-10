@@ -1,0 +1,23 @@
+<!--pages/tutor/tutor.wxml-->
+<view class="container">
+  <image class="background" src="/images/导师.jpeg"></image>
+  <view class="header">
+  燕山大学教师个人主页
+  </view>
+  <image class="photo" src = "{{detail.picture}}">
+  </image>
+
+  <view class="name">
+  姓名：{{detail.name}}
+  </view>
+  <view class="degree">
+  学位：{{detail.xuewei}}
+  </view>
+  <view class="place">
+  单位：{{detail.danwei}}
+  </view>
+  <view class="summary">
+  简介：{{detail.jianjie}}
+  </view>
+
+</view>

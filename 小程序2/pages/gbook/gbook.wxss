@@ -1,0 +1,41 @@
+/* pages/gbook/gbook.wxss */
+page{
+  background-color: LightCyan;
+}
+.container{
+  margin: auto;
+  position: absolute;
+  top: -100px;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+}
+.name{
+  width: 100%;
+  text-align: center;
+  font-size: 27px;
+}
+.week{
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+.week:active{
+  background-color: darkgrey;
+}
+.time{
+  width: 100%;
+}
+.select_one{
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  border: 1px solid black;
+  margin-top: 5px;
+  background-color: powderblue;
+}
+.select_one:active{
+  background-color: darkgrey;
+}

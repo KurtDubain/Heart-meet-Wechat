@@ -1,0 +1,50 @@
+<!--pages/consult/consult.wxml-->
+<view class="nav">
+  <view id="0" class="{{currentIndex==0?'selected':'normal'}}" bindtap="changeCurrentIndex">
+    校心理导师
+  </view>
+  <view id="1" class="{{currentIndex==1?'selected':'normal'}}" bindtap="changeCurrentIndex">
+    心逢小助手
+  </view>
+</view>
+<swiper current="{{currentIndex}}" style="height: {{winHeight}}px">
+  <swiper-item catchtouchmove="stopTouchMove" class="t">
+    <view class="tutor">
+      <input type="text" placeholder="搜索" bindinput="getcontent" value="{{content}}" class="find"/>
+    </view>
+      <block wx:for="{{datalist}}" wx:key="index">
+        <view class="t_data" bindtap="go1" data-item="{{item}}">
+        <image class="t_photo" src="{{item.picture}}"></image>
+        <view class="t_text">
+          <view class="t_name">
+          姓名：{{item.name}}
+          </view>
+          <view class="t_mark">
+          评分
+          </view>
+          <view class="t_place">
+          燕山大学
+          </view>
+          <view class="t_number">
+          预约人数
+          </view>
+        </view>
+        <view class="rec">
+        推荐
+        </view>
+        <view class="book" bindtap="book" data-item="{{item}}">
+        点击预约
+        </view>
+      </view> 
+    </block>
+ </swiper-item>
+  <swiper-item catchtouchmove="stopTouchMove">
+    <view class="title" decode='true'>
+      <text decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;欢迎使用心逢小助手</text>
+    </view>
+    <view class="click" bindtap="go2">
+      <image src="/images/小助手.png" class="zhushou"></image>
+    </view>
+  </swiper-item>
+</swiper>
+

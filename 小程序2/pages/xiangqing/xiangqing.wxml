@@ -1,0 +1,20 @@
+<!--标题和描述-->
+<view>
+  <view>{{detail.title}}</view>
+  <view>{{detail.desc}}</view>
+</view>
+<!--点赞和收藏-->
+<image src = "{{imgUrl}}" class="image" bindtap = "clickme"></image>
+<image src = "{{imgUrl1}}" class="image1" bindtap = "clickme1"></image>
+<!--评论-->
+
+<view class="tip">评论区域</view>
+<block wx:for="{{pinglun}}" wx:key="wuwuuwu">
+ <view class="pinglunitem">
+  <text>{{item.name}}发表评论：</text>
+  <text>{{item.content}}</text>
+ </view>
+</block>
+<!--发表评论-->
+<input placeholder="请输入内容" class="input" bindinput="getcontent" value="{{content}}"> </input>
+<button type = "primary" bindtap = "fabiao">发表评论</button>

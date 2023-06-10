@@ -1,0 +1,158 @@
+/* pages/community/community.wxss */
+.nav{
+  display: flex;
+  background-color: lightcyan;
+}
+.selected{
+  width: 80px;
+  margin: auto;
+  padding: 2px;
+  text-align: center;
+  border-bottom: 2px solid red;
+  font-weight: 600;
+}
+.normal{
+  width: 80px;
+  margin: auto;
+  padding: 2px;
+  text-align: center;
+  font-weight: 600;
+}
+.radio{
+  width: 60%;
+  margin: 10px auto;
+  text-align: center;
+  border: 1px solid black;
+}
+.Music{
+  width: 90%;
+  height: 400px;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.music{
+  width: 45.5%;
+  height: 46%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.audio{
+  width: 100%;
+  height: 100%;
+}
+.background{
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+.add{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 5%;
+  bottom: 2%;
+  z-index: 99;
+}
+.container3{
+  width: 95%;
+  height: 300px;
+  margin: auto;
+  position: relative;
+  border-bottom: 1px solid black;
+}
+.go3{
+  height: 85%;
+}
+.tx{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  float: left;
+  margin: 5px;
+}
+.data3{
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  float: left;
+}
+.name3{
+  font-size: 15px;
+  width: 50%;
+  text-align: left;
+  margin: 10px 5px;
+}
+.time3{
+  width: 100%;
+  text-align: left;
+  margin: 5px;
+  font-size: 13px;
+}
+.info3{
+  text-align: left;
+  margin: 10px 5px;
+}
+.photo3{
+  width: 60%;
+  height: 120px;
+  margin: 5px;
+}
+.dian{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.share{
+  display:block;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  position: absolute;
+  left: 20%;
+  bottom: 0;
+  margin: auto;
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: none;
+}
+.xh{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  bottom: 2px;
+}
+.xhnumber{
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+  width: 10%;
+  height: 20px;
+  position: absolute;
+  left: 62%;
+  bottom: 6px;
+}
+.pl{
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 75%;
+  bottom: 0;
+}
+.plnumber{
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+  text-align: center;
+  width: 10%;
+  height: 20px;
+  position: absolute;
+  left: 87%;
+  bottom: 6px;
+}

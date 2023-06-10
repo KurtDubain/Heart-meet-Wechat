@@ -1,0 +1,6 @@
+<!--
+<block wx:for="{{list}}" wx:key="index">
+  <view class="item">{{item._id}}</view>
+</block>
+-->
+<image src="../../images/kaitou.jpg" class = "bg-image" mode="scaleToFill" bindtap = "tiaozhuan"></image>

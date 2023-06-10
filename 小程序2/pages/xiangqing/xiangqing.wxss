@@ -1,0 +1,19 @@
+.image{
+  width: 120rpx;
+  height:120rpx;
+}
+.image1{
+  width: 120rpx;
+  height:120rpx;
+}
+
+.tip{
+  margin-top: 30rpx;
+  font-size: 50rpx;
+  color: goldenrod;
+}
+.input{
+  border: 1px solid gainsboro;
+  margin-top: 150rpx;
+  margin-bottom: 60rpx;
+}

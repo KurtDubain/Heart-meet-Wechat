@@ -1,0 +1,36 @@
+/* pages/my/my.wxss */
+.header{
+  height: 200px;
+  background: lightblue;
+}
+.login_btn{
+  position: relative;
+  top: 50px;
+}
+.login_out{
+  font-size: 33rpx;
+  color: gray;
+  margin-top: 10rpx;
+}
+.root{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.touxiang{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px;
+}
+.nickname{
+  margin-bottom: 10px;
+}
+.item{
+  display: flex;
+  padding: 30rpx;
+  background: pink;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid gainsboro;
+}

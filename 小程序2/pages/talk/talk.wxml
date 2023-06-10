@@ -1,0 +1,43 @@
+<!--pages/talk/talk.wxml-->
+<view class="talk">
+  <view class="s">
+    <image class="zhushou" src="/images/小助手.png">
+    </image>
+    <view class="start">
+      <view class="Angle1">
+      </view>
+      <text>
+        {{user.nickName}}你好，有什么需要帮助的吗？我们可以为您提供：
+        1.心理诊断
+        2.AI树洞
+        3.科普教育
+      </text>
+    </view>
+  </view>
+  <block wx:for="{{talk}}">
+    <view class="t">
+      <view class="t1">
+        <view class="Angle2"></view>
+        <text>
+          {{item.content}}
+        </text>
+      </view>
+      <image src="{{user.avatarUrl}}" class="touxiang"></image>
+    </view>
+    <view class="s1">
+      <image class="zhushou" src="/images/小助手.png">
+      </image>
+      <view class="start">
+        <view class="Angle1">
+        </view>
+        <text>
+          {{item.respone}}
+        </text>
+      </view>
+    </view>
+  </block>
+</view>
+<view class="fspl">
+  <textarea name="text" placeholder='简短地说出你的烦恼吧' class="textinput" bindinput="getcontent" value="{{content}}" />
+  <button type = "primary" class="btn" bindtap = "talk" type='text'>发送</button>
+</view>

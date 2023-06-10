@@ -1,0 +1,6 @@
+<!--pages/us/us.wxml-->
+<view class="title">关于我们</view>
+<image class="logo">图片</image>
+<view class="item"><text decode="{{true}}">&ensp;版本更新</text><text class="edition">已经是最新版本</text></view>
+<view class="item"><text decode="{{true}}">&ensp;帮助</text></view>
+<view class="item"><text decode="{{true}}">&ensp;反馈</text></view>

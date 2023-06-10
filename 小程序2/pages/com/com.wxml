@@ -1,0 +1,32 @@
+<!--pages/com/com.wxml-->
+
+<view class="container">
+<view class="head">
+  <image class="tx" src = "{{detail.touxiang}}"></image>
+  <view class="name">{{detail.nicheng}}</view>
+  <view class="time">{{detail.time}}</view>
+</view>
+<view class="information">{{detail.text}}</view>
+<image class="photo" src = "{{detail.picture}}"></image>
+<view class="control">
+  <image src="/images/收藏.png" class="sc"></image>
+  <image src="/images/爱心.png" class="xh"></image>
+  <view class="xhnumber">2.1k</view>
+  <image src="/images/消息_o.png" class="pl"></image>
+  <view class="plnumber">376</view>
+  <button open-type='share' class="share" style="background-image:url(/images/分享2.png);"></button>
+</view>
+<block wx:for="{{pinglun}}" wx:key="wuwuuwu">
+   <view class="pinglunitem">
+     <text>{{item.name}}发表评论：</text>
+     <text>{{item.content}}</text>
+    </view>
+</block>
+</view>
+
+
+<view class="fspl">
+  <input name="text" placeholder='留下你精彩的评论吧' class="textinput" bindinput="getcontent" value="{{content}}" />
+  <button type = "primary" class="btn" bindtap = "fabiao2">发送</button>
+</view>
+

@@ -1,0 +1,66 @@
+<!--pages/community/community.wxml-->
+<view class="nav">
+  <view id="0" class="{{currentIndex==0?'selected':'normal'}}" bindtap="changeCurrentIndex">
+    心逢电台
+  </view>
+  <view id="1" class="{{currentIndex==1?'selected':'normal'}}" bindtap="changeCurrentIndex">
+    社区
+  </view>
+</view>
+<image class="add" src="/images/加号.png" style="display: {{currentIndex==1?'block':'none'}};" bindtap="fasong"></image>
+
+<swiper current="{{currentIndex}}" style="height: {{winHeight}}px">
+  <swiper-item catchtouchmove="stopTouchMove">
+    <view class="radio">
+      <input type="text" placeholder="搜索" />
+    </view>
+    <view class="Music">
+      <view class="music" bindtap="go">
+        <view class="audio">
+          <image class="background" src="../../images/音乐大封面.jpg">
+          </image>
+        </view>
+      </view>
+      <view class="music" bindtap="go1">
+        <view class="audio">
+          <image class="background"src="../../images/音乐大封面2.jpg"></image>
+        </view>
+      </view>
+      <view class="music">
+        <view class="audio">
+          <image class="background"src="../../images/音乐大封面3.jpg"></image>
+        </view>
+      </view>
+      <view class="music">
+        <view class="audio">
+          <image class="background"src="../../images/音乐大封面4.jpg"></image>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+
+  <swiper-item catchtouchmove="stopTouchMove" class="S3">
+  <block wx:for="{{datalist}}" wx:key="index">
+  <text>\n</text>
+  <text>\n</text>
+    <view class="container3">
+    
+      <view bindtap="go3" class="go3" data-item="{{item}}">
+        <image class="tx" src="{{item.touxiang}}"></image>
+        <view class="data3">
+          <view class="name3">{{item.nicheng}}</view>
+          <view class="time3">{{item.time}}</view>
+          <view class="info3">{{item.text}}</view>
+          <view><image class="photo3" src="{{item.picture}}"></image></view>
+        </view>
+      </view>
+      <image class="dian" src="/images/点点点.png" bindtap="dian"></image>
+      <button open-type='share' class="share" style="background-image:url(/images/分享2.png);"></button>
+      <image class="xh" src="/images/爱心.png"></image>
+      <view class="xhnumber">2.1k</view>
+      <image class="pl" src="/images/消息_o.png"></image>
+      <view class="plnumber">376</view>
+    </view>
+  </block>
+  </swiper-item>
+</swiper>

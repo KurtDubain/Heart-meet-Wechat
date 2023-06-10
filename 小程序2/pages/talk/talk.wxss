@@ -1,0 +1,113 @@
+/* pages/talk/talk.wxss */
+.talk{
+  height: 700px;
+}
+.s{
+  display: flex;
+  margin-bottom: 10px;
+}
+.zhushou{
+  width: 40px;
+  height: 40px;
+  margin: 10px 0 0 10px;
+}
+.start{
+  width: 50%;
+  margin: 10px;
+  position: relative;
+  background-color: pink;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.Angle1 {
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  position: absolute;
+  top: 10rpx;
+  left: -5rpx;
+  background: pink;
+  width: 35rpx;
+  height: 35rpx;
+  margin-top: 26rpx;
+  transform: rotate(45deg);
+  z-index: -1;
+  border: 1px solid black;
+}
+text{
+  position:relative;
+  bottom: 20px;
+}
+.touxiang{
+  margin: 10px 10px 10px 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.t{
+  position: relative;
+  left: 70px;
+  float: right;
+  display: flex;
+  width: 100%;
+}
+.t1{
+  width: 50%;
+  position: relative;
+  background-color: lightblue;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.Angle2 {
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  position: absolute;
+  top: 10rpx;
+  right: -5rpx;
+  background: lightblue;
+  width: 35rpx;
+  height: 35rpx;
+  margin-top: 26rpx;
+  transform: rotate(45deg);
+  z-index: -1;
+  border: 1px solid black;
+}
+.s1 .start{
+  bottom: 60px;
+  left: 50px;
+}
+.s1 .zhushou{
+  margin: 10px;
+}
+.fspl{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  background-color: lightblue;
+  border-top: 1px solid black;
+  position: fixed;
+  bottom: 0;
+}
+.textinput{
+  position: absolute;
+  top: 15px;
+  left: 10%;
+  background-color: white;
+  border: 1px solid black;
+  width: 55%;
+  height: 20px;
+}
+.btn{
+  width: 55px;
+  font-size: 13px;
+  position: absolute;
+  top: 15px;
+  right: 10%;
+  text-align: center;
+  line-height: 25px;
+  height: 25px;
+}

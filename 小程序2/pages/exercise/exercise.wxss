@@ -1,0 +1,145 @@
+/* pages/exercise/exercise.wxss */
+.nav{
+  display: flex;
+  background-color: lightcyan;
+}
+.selected{
+  width: 80px;
+  margin: auto;
+  padding: 2px;
+  text-align: center;
+  border-bottom: 2px solid red;
+  font-weight: 600;
+}
+.normal{
+  width: 80px;
+  margin: auto;
+  padding: 2px;
+  text-align: center;
+  font-weight: 600;
+}
+.t{
+  background-color: rgb(231, 231, 231);
+}
+.home{
+  width: 90%;
+  height: 148px;
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 15px;
+}
+.sort{
+  display: flex;
+  margin: 20px;
+}
+.distence{
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 17px;
+  margin: auto;
+  text-align: center;
+  box-shadow: 2px 2px 2px 2px gray;
+  background-color: white;
+  font-weight: 600;
+}
+.price{
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 17px;
+  margin: auto;
+  text-align: center;
+  box-shadow: 2px 2px 2px 2px gray;
+  background-color: white;
+  font-weight: 600;
+}
+.photo{
+  text-align: center;
+  border-radius: 15px;
+}
+.item{
+  width: 100%;
+  height: 150px;
+  border-radius: 15px;
+}
+.gym1{
+  width: 95%;
+  margin: 10px auto;
+  position: relative;
+  display: flex;
+  height: 100px;
+  box-shadow: 1px 2px 1px 1px gray;
+  border-radius: 10px;
+  background-color: white;
+}
+.gympicture{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.name1{
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+}
+.text{
+  width: 50%;
+  margin: auto 5px;
+}
+.summary{
+  width: 100%;
+  height: 4em;
+  font-size: 13px;
+  color: grey;
+}
+.dis{
+  width: 40px;
+  height: 20px;
+  position: absolute;
+  top: 50px;
+  right: 15px;
+  font-size: 13px;
+  color: red;
+}
+.mark{
+  width: 100%;
+  font-size: 13px;
+}
+.starY{
+  width: 10px;
+  height: 10px;
+}
+.starN{
+  width: 10px;
+  height: 10px;
+}
+.renmingbi{
+  width: 10px;
+  height: 10px;
+}
+.map{
+  width: 90%;
+  height: 200px;
+  margin: 20px auto;
+  border: 1px solid black;
+}
+.Map{
+  width: 100%;
+  height: 100%;
+}
+.run{
+  font-size: 25px;
+  text-align: center ;
+}
+.km{
+  margin: 30px auto;
+  font-size: 30px;
+  text-align: center;
+  line-height: 200px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid black;
+}

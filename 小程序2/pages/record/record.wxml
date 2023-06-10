@@ -1,0 +1,45 @@
+<!--pages/record/record.wxml-->
+
+<view class="tutor" bindtap='bindShowMsg1'>
+    心理导师
+</view>
+<view class="record" wx:if="{{select1}}">
+<view wx:if="{{datalist1}}">
+  <block wx:for="{{datalist1}}" wx:key="index">
+    <view class="item1" data-item="{{item}}">
+      <view class="teacher">
+        {{item.teacher}}
+      </view>
+      <view class="time">
+        {{item.time}}
+      </view>
+      <view class="delete" bindtap="delete1" data-id="{{item._id}}">
+        取消
+      </view>
+    </view>
+  </block>
+</view>
+<view wx:else><view class="no">
+  暂无记录
+</view></view>
+</view>
+<view class="gym" bindtap='bindShowMsg2'>
+    健身房
+</view>
+<view class="recordg" wx:if="{{select2}}">
+  <block wx:for="{{datalist2}}" wx:key="index">
+    <view class="item2" data-item="{{item}}">
+      <view class="g">
+        {{item.gym}}
+      </view>
+      <view class="time">
+        {{item.time}}
+      </view>
+      <view class="delete" bindtap="delete2" data-id="{{item._id}}">
+        取消
+      </view>
+    </view>
+  </block>
+</view>
+
+

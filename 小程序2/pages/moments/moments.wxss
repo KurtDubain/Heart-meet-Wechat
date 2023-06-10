@@ -1,0 +1,31 @@
+/* pages_sceond/create/create.wxss */
+textarea{
+  border: 3rpx solid rebeccapurple;
+ }
+
+ textarea{
+  height:300rpx;
+  border: 0rpx solid rebeccapurple;
+  position: relative;
+ }
+ 
+ .botsum{
+  position:absolute;
+  top: 260rpx;
+  font-size: 28rpx;
+ }
+
+.img{
+  width: 200px;
+  height: 200px;
+}
+
+.btn1 {
+  width: 80%;
+  margin-top: 20rpx;
+  border-radius: 98rpx; 
+}
+.btn1::after {
+  border-radius: 98rpx;
+}
+

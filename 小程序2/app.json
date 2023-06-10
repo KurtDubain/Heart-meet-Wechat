@@ -1,0 +1,73 @@
+{
+  "pages": [
+    "pages/exercise/exercise",
+    "pages/consult/consult",
+    "pages/shequ1/shequ1",
+    "pages/xiangqing/xiangqing",
+    "pages/my/my",
+    "pages/home/home",
+    "pages/home1/home1",
+    "pages/fit_video/fit_video",
+    "pages/gym/gym",
+    "pages/tutor/tutor",
+    "pages/community/community",
+    "pages/radio/radio",
+    "pages/com/com",
+    "pages/moments/moments",
+    "pages/us/us",
+    "pages/book/book",
+    "pages/record/record",
+    "pages/talk/talk",
+    "pages/gbook/gbook",
+    "pages/VR/VR"
+  ],
+  "tabBar": {
+    "selectedColor": "#FFFF00",
+    "backgroundColor": "#ADD8E6",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/exercise/exercise",
+        "iconPath": "images/篮球2.png",
+        "selectedIconPath": "images/篮球1.png",
+        "text": "锻炼"
+      },
+      {
+        "pagePath": "pages/consult/consult",
+        "iconPath": "images/咨询.png",
+        "selectedIconPath": "images/咨询1.png",
+        "text": "咨询"
+      },
+      {
+        "pagePath": "pages/VR/VR",
+        "iconPath": "images/vr.png",
+        "selectedIconPath": "images/VR眼镜.png",
+        "text": "VR"
+      },
+      {
+        "pagePath": "pages/community/community",
+        "iconPath": "images/社区.png",
+        "selectedIconPath": "images/社区 1.png",
+        "text": "社区"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "images/我的.png",
+        "selectedIconPath": "images/我的1.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ADD8E6",
+    "navigationBarTitleText": "心逢",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取你当前位置信息用于小程序位置接口的效果展示"
+    }
+  }
+}

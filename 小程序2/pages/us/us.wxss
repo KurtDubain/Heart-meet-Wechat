@@ -1,0 +1,27 @@
+/* pages/us/us.wxss */
+.title{
+  font-size: 25px;
+  text-align: center;
+  margin: 10px;
+}
+.logo{
+  width: 60%;
+  height: 150px;
+  margin: 10px 20%;
+  border: 1px solid black;
+}
+.item{
+  width: 95%;
+  height: 40px;
+  margin: 15px auto;
+  line-height: 40px;
+  font-size: 18px;
+  position: relative;
+  background-color: lightcyan;
+  border: 1px solid black;
+}
+.edition{
+  font-size: 13px;
+  position: absolute;
+  right: 5px;
+}

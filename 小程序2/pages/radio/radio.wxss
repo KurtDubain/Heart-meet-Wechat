@@ -1,0 +1,152 @@
+/* pages/radio/radio.wxss */
+.header{
+  width: 50%;
+  font-size: 20px;
+  text-align: center;
+  margin: 10px auto;
+}
+.container{
+  width: 100%;
+  padding:  0 0 20% 0;
+}
+.data{
+  width: 100%;
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+  height: 210px;
+  border-bottom: 1px solid black;
+}
+.photo{
+  width: 45%;
+  height: 75%;
+  margin: auto 15px;
+}
+.name{
+  text-align: center;
+  font-size: 20px;
+  width: 40%;
+  margin: auto;
+}
+.like{
+  font-size: 20px;
+  margin: auto;
+}
+.share{
+  font-size: 20px;
+  margin: auto;
+}
+.names{
+  width: 100%;
+}
+.t_data{
+  width: 96%;
+  height: 90px;
+  margin: 2% 0 2% 2%;
+  display: flex;
+  position: relative;
+}
+.t_people{
+  margin-top: 10%;
+  font-size: 10px;
+}
+.book1{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50px;
+  right: 15px;
+  font-size: 13px;
+}
+.t_text{
+  font-size: 15px;
+  margin-top: 6%;
+  display: flex;
+  flex-direction: column;
+}
+.t_photo{
+  width: 65px;
+  height: 65px;
+  margin: 10px;
+}
+.tail{
+  width: 100%;
+  height: 12%;
+  display: flex;
+  background-color: lightblue;
+  border-top: 1px solid black;
+  position: fixed;
+  bottom: 0;
+}
+.png{
+  width: 40px;
+  height: 40px;
+  margin: auto 10px;
+  border: 1px solid black;
+}
+.music{
+  margin-top: 5%;
+  font-size: 15px;
+}
+.play{
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  text-align: center;
+  background-color: lightblue;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  right: 18px;
+}
+.trangle{
+  width:0;
+  height:0;
+  border-width:15px 0 15px 15px; 
+  border-style:solid;
+  background-color: lightblue;
+  border-color:transparent transparent transparent #333;
+  margin:40px auto;
+  position:relative;
+  top: -36px;
+  right: -3px;
+}
+.trangle view{
+  width:0;
+  height:0;
+  border-width:12px 0 12px 12px;
+  border-style:solid;
+  border-color:transparent transparent transparent lightblue;
+  position:absolute;
+  top:-12px;
+  left:-13px;
+}
+.pause{
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  text-align: center;
+  background-color: lightblue;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  right: 18px;
+}
+.rectangle1{
+  width: 4px;
+  height: 25px;
+  background-color: black;
+  bottom: 7px;
+  left:12px;
+  position: absolute;
+}
+.rectangle2{
+  width: 4px;
+  height: 25px;
+  background-color: black;
+  top: 8px;
+  right: 12px;
+  position: absolute;
+}

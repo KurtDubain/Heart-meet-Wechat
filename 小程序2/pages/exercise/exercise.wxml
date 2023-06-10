@@ -1,0 +1,88 @@
+<view class="nav">
+  <view id="0" class="{{currentIndex==0?'selected':'normal'}}" bindtap="changeCurrentIndex">
+    计划练
+  </view>
+  <view id="1" class="{{currentIndex==1?'selected':'normal'}}" bindtap="changeCurrentIndex">
+    自由练
+  </view>
+</view>
+
+<swiper current="{{currentIndex}}" style="height: {{winHeight}}px">
+  <swiper-item class="t">
+    <view class="home">
+      <view class="photo">
+        <swiper indicator-dots="true" indicator-active-color="red" autoplay="true" circular="true">
+          <view wx:for="{{gym}}" wx:key="a">
+            <swiper-item>
+               <image class="item" src="{{item}}" bindtap="govideo"><text>居家练</text>></image>
+            </swiper-item>
+          </view>
+        </swiper>
+      </view>
+    </view>
+    <view class="gym">
+      <view class="sort">
+        <view class="distence" bindtap = "juli">
+          距离优先
+        </view>
+        <view class="price" bindtap = "jiage">
+          价格优先
+        </view>
+      </view>
+   
+    </view>
+   <block wx:for="{{gymlist}}" wx:key="b">
+   <view class="gym1" bindtap="gogym" data-item="{{item}}">
+   <image class = "gympicture" src="{{item.picture}}"></image>
+    <view class="text">
+      <view class="name1">
+        {{item.name}}
+       </view>
+       <view class="mark">
+         评分:   
+          <block wx:for="{{starYesNum}}" wx:key="index">
+            <image class="starY" id='{{index+1}}' data-in='selectStarYes' 
+            src='../../images/shucang-yes.png'></image>
+          </block>
+          <block wx:for="{{starNoNum}}"  wx:key="index">
+            <image class="starN"  id='{{index+1}}' data-in='selectStarNo' 
+            src='../../images/shucang-no.png'></image>
+          </block>
+          <text>人均</text>
+          <image class="renmingbi" src = "../../images/人民币.png"></image>
+          <text>{{item.price}}</text>
+       </view>
+       <view class="summary">
+           {{item.jianjie}}
+       </view>
+       <view class="dis">
+          {{item.weizhi}}
+       </view>
+      </view>
+     </view>
+   </block>
+  </swiper-item>
+  
+  <swiper-item catchtouchmove="stopTouchMove">
+    <view class="map">
+      <map class="Map" id="map"
+longitude="{{longitude}}"
+latitude="{{latitude}}"
+scale="14"
+markers="{{markers}}"
+bindmarkertap="markertap"
+bindregionchange="regionchange"
+show-location></map>
+    </view>
+    <view class="run">
+      锻炼跑
+    </view>
+    <view class="km">
+      XX公里
+    </view>
+  </swiper-item>
+</swiper>
+
+
+
+

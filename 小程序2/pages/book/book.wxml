@@ -1,0 +1,61 @@
+<view class="container">
+  <view class="name">
+  {{detail.name}}
+  </view>
+  <view class="week" bindtap='bindShowMsg1'>
+    星期一
+  </view>
+  <view class="time" wx:if="{{select1}}">
+    <view class="select_one" bindtap="mySelect" data-name="星期一 9:00--11:00">9:00--11:00</view>
+    <view class="select_one" bindtap="mySelect" data-name="星期一 14:00--16:00">14:00--16:00</view>
+    <view class="select_one" bindtap="mySelect" data-name="星期一 16:00--18:00">16:00--18:00</view>
+  </view>
+  <view class="week" bindtap='bindShowMsg2'>
+    星期二
+  </view>
+  <view class="time" wx:if="{{select2}}">
+    <view class="select_one" bindtap="mySelect" data-name="星期二 9:00--11:00">9:00--11:00</view>
+    <view class="select_one" bindtap="mySelect" data-name="星期二 14:00--16:00">14:00--16:00</view>
+    <view class="select_one" bindtap="mySelect" data-name="星期二 16:00--18:00">16:00--18:00</view>
+  </view>
+  <view class="week" bindtap='bindShowMsg3'>
+    星期三
+  </view>
+  <view class="time" wx:if="{{select3}}">
+    <view class="select_one" bindtap="mySelect" data-name="星期三 9:00--11:00">9:00--11:00</view>
+    <view class="select_one" bindtap="mySelect" data-name="星期三 14:00--16:00">14:00--16:00</view>
+    <view class="select_one" bindtap="mySelect" data-name="星期三 16:00--18:00">16:00--18:00</view>
+  </view>
+  <view class="week" bindtap='bindShowMsg4'>
+    星期四
+  </view>
+  <view class="time" wx:if="{{select4}}">
+    <view class="select_one" bindtap="mySelect" data-name="星期四 9:00--11:00">9:00--11:00</view>
+    <view class="select_one" bindtap="mySelect" data-name="星期四 14:00--16:00">14:00--16:00</view>
+    <view class="select_one" bindtap="mySelect" data-name="星期四 16:00--18:00">16:00--18:00</view>
+  </view>
+  <view class="week" bindtap='bindShowMsg5'>
+    星期五
+  </view>
+  <view class="time" wx:if="{{select5}}">
+    <view class="select_one" bindtap="mySelect" data-name="星期五 9:00--11:00">9:00--11:00</view>
+    <view class="select_one" bindtap="mySelect" data-name="星期五 14:00--16:00">14:00--16:00</view>
+    <view class="select_one" bindtap="mySelect" data-name="星期五 16:00--18:00">16:00--18:00</view>
+  </view>
+  <view class="week" bindtap='bindShowMsg6'>
+    星期六
+  </view>
+  <view class="time" wx:if="{{select6}}">
+    <view class="select_one" bindtap="mySelect" data-name="星期六 9:00--11:00">9:00--11:00</view>
+    <view class="select_one" bindtap="mySelect" data-name="星期六 14:00--16:00">14:00--16:00</view>
+    <view class="select_one" bindtap="mySelect" data-name="星期六 16:00--18:00">16:00--18:00</view>
+  </view>
+  <view class="week" bindtap='bindShowMsg7'>
+    星期日
+  </view>
+  <view class="time" wx:if="{{select7}}">
+    <view class="select_one" bindtap="mySelect" data-name="星期日 9:00--11:00">9:00--11:00</view>
+    <view class="select_one" bindtap="mySelect" data-name="星期日 14:00--16:00">14:00--16:00</view>
+    <view class="select_one" bindtap="mySelect" data-name="星期日 16:00--18:00">16:00--18:00</view>
+  </view>
+</view>

@@ -1,0 +1,18 @@
+<!--pages/home/home.wxml-->
+
+<block wx:for="{{datalist}}" wx:key="b">
+<view class="summary" bindtap="go1" data-item="{{item}}">
+  <image class="img" src="{{item.fengmian}}">
+  </image> 
+  <view class="data">
+    <view class="title">
+      {{item.name}}
+    </view>
+    <image src="../../images/播放.png" class="play">
+    </image>
+    <view class="times">
+      245次观看
+    </view>
+  </view>
+</view>
+</block>
